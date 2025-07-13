@@ -112,9 +112,9 @@ chatcli --set-default-provider claude
 chatcli --set-default-provider openai
 
 # Set default model for a provider
-chatcli --set-default-model openai gpt-4o
-chatcli --set-default-model claude claude-3-5-sonnet-20241022
-chatcli --set-default-model gemini gemini-2.0-flash
+chatcli --set-default-model openai gpt-4.1
+chatcli --set-default-model claude claude-sonnet-4
+chatcli --set-default-model gemini gemini-2.5-pro
 
 # Show current configuration
 chatcli --config
@@ -147,7 +147,7 @@ Once in a chat session, you can use these commands:
 ```bash
 $ chatcli --claude
 ChatCLI - CLAUDE
-Model: claude-3-5-sonnet-20241022
+Model: claude-sonnet-4
 ==============================
 Commands:
   /quit, /exit, /q     - Exit chat
@@ -215,7 +215,7 @@ chatcli --configure-defaults              # Set default provider and models
 
 # Or configure individually
 chatcli --set-default-provider claude     # Make Claude the default
-chatcli --set-default-model openai gpt-4o # Set GPT-4o as OpenAI default
+chatcli --set-default-model openai gpt-4.1 # Set GPT-4o as OpenAI default
 ```
 
 ### Configuration File Structure
@@ -227,11 +227,11 @@ The config file (`~/.chatcli/config.json`) structure:
   "providers": {
     "openai": {
       "api_key": "your-key",
-      "default_model": "gpt-4o"
+      "default_model": "gpt-4.1"
     },
     "claude": {
       "api_key": "your-key", 
-      "default_model": "claude-3-5-sonnet-20241022"
+      "default_model": "claude-sonnet-4"
     }
   },
   "settings": {

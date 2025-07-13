@@ -37,7 +37,7 @@ class ConfigManager:
             "providers": {
                 "openai": {
                     "api_key": "",
-                    "default_model": "gpt-4o-mini"
+                    "default_model": "gpt-4.1"
                 },
                 "deepseek": {
                     "api_key": "",
@@ -45,11 +45,11 @@ class ConfigManager:
                 },
                 "claude": {
                     "api_key": "",
-                    "default_model": "claude-3-5-sonnet-20241022"
+                    "default_model": "claude-sonnet-4"
                 },
                 "gemini": {
                     "api_key": "",
-                    "default_model": "gemini-2.0-flash"
+                    "default_model": "gemini-2.5-pro"
                 },
                 "grok": {
                     "api_key": "",
